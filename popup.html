@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Extensión</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      padding: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <form id="markdownForm">
+    <label for="fileName">Nombre del Archivo:</label>
+    <input type="text" id="fileName" name="fileName" required>
+    <button type="button" id="generateMarkdown">Generar Markdown</button>
+  </form>
+
+  <script src="popup.js"></script>
+</body>
+</html>
